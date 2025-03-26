@@ -15,7 +15,7 @@ Please wait for the bounding box to appear before drawing the next one.
 Press 'r' to reset the bounding boxes.
 Press 'ENTER' to save and quit.
 
-The bounding boxes will be saved in a text file 'my_input/{video_file_name}_init_bboxes.txt' in the following format:
+The bounding boxes will be saved in a text file 'my_inputs/{video_file_name}_init_bboxes.txt' in the following format:
 x,y,w,h
 """
 
@@ -54,7 +54,7 @@ parser.add_argument('video_filename', type=str, help='Video file name (without f
 args = parser.parse_args()
 
 #read first frame
-cap = cv2.VideoCapture(f"my_input/{args.video_filename}.mp4")
+cap = cv2.VideoCapture(f"my_inputs/{args.video_filename}.mp4")
 ret, frame = cap.read()
 if not ret:
     print("Failed to read the video")
@@ -75,7 +75,7 @@ while True:
         frame = overlay.copy()
 
 #save bboxes to file
-with open(f"my_input/{args.video_filename}_init_bboxes.txt", 'w') as f:
+with open(f"my_inputs/{args.video_filename}_init_bboxes.txt", 'w') as f:
     for bbox in bboxes:
         f.write(f"{bbox[0]},{bbox[1]},{bbox[2]},{bbox[3]}\n")
 
