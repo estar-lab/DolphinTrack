@@ -1,3 +1,0 @@
-[submodule "camera_detection/samurai"]
-	path = camera_detection/samurai
-	url = https://github.com/yangchris11/samurai.git
