@@ -1,0 +1,7 @@
+camera_detection/samurai
+camera_detection/my_video/*.mp4
+camera_detection/my_video/*.mov
+camera_detection/my_inputs/chunks/*.mp4
+camera_detection/my_inputs/chunks/*.mov
+camera_detection/my_outputs/*.mp4
+camera_detection/my_outputs/*.mov
