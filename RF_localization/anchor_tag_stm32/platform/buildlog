@@ -1,0 +1,1332 @@
+15:00:20 **** Incremental Build of configuration Debug for project NEAR_ANCHOR ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/Target/usbd_conf.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/decadriver/inc" -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/platform/inc" -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/compiler/inc" -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"USB_DEVICE/Target/usbd_conf.d" -MT"USB_DEVICE/Target/usbd_conf.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "USB_DEVICE/Target/usbd_conf.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usb_device.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/decadriver/inc" -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/platform/inc" -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/compiler/inc" -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"USB_DEVICE/App/usb_device.d" -MT"USB_DEVICE/App/usb_device.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "USB_DEVICE/App/usb_device.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/decadriver/inc" -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/platform/inc" -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/compiler/inc" -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/decadriver/inc" -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/platform/inc" -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/compiler/inc" -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/decadriver/inc" -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/platform/inc" -I"C:/Users/terry/STM32CubeIDE/workspace_1.16.0/NEAR_ANCHOR/compiler/inc" -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o"
+In file included from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:32,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:30,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:29,
+                 from ../USB_DEVICE/App/usbd_cdc_if.h:30,
+                 from ../Core/Inc/main.h:35,
+                 from ../USB_DEVICE/Target/usbd_conf.h:33,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ../USB_DEVICE/Target/usbd_conf.c:24:
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:76:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   76 | USBD_StatusTypeDef  USBD_StdDevReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+In file included from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:32,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:30,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:29,
+                 from ../USB_DEVICE/App/usbd_cdc_if.h:30,
+                 from ../Core/Inc/main.h:35,
+                 from ../USB_DEVICE/Target/usbd_conf.h:33,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ../USB_DEVICE/App/usb_device.h:32,
+                 from ../USB_DEVICE/App/usb_device.c:23:
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:76:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   76 | USBD_StatusTypeDef  USBD_StdDevReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:76:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   76 | USBD_StatusTypeDef  USBD_StdDevReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+In file included from ../USB_DEVICE/App/usbd_cdc_if.h:30,
+                 from ../Core/Inc/main.h:35,
+                 from ../USB_DEVICE/Target/usbd_conf.h:33,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:29,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:21:
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:140:8: error: unknown type name 'USBD_ClassTypeDef'
+  140 | extern USBD_ClassTypeDef  USBD_CDC;
+      |        ^~~~~~~~~~~~~~~~~
+In file included from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:30,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:29,
+                 from ../USB_DEVICE/App/usbd_cdc_if.h:30,
+                 from ../Core/Inc/main.h:35,
+                 from ../USB_DEVICE/Target/usbd_conf.h:33,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:29,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:21:
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:85:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   85 | USBD_StatusTypeDef USBD_Init(USBD_HandleTypeDef *pdev, USBD_DescriptorsTypeDef *pdesc, uint8_t id);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:76:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   76 | USBD_StatusTypeDef  USBD_StdDevReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:76:63: error: unknown type name 'USBD_SetupReqTypedef'
+   76 | USBD_StatusTypeDef  USBD_StdDevReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                                               ^~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:149:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  149 | uint8_t  USBD_CDC_RegisterInterface(USBD_HandleTypeDef   *pdev,
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:85:30: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   85 | USBD_StatusTypeDef USBD_Init(USBD_HandleTypeDef *pdev, USBD_DescriptorsTypeDef *pdesc, uint8_t id);
+      |                              ^~~~~~~~~~~~~~~~~~
+      |                              UART_HandleTypeDef
+In file included from ../Core/Inc/main.h:35,
+                 from ../USB_DEVICE/Target/usbd_conf.h:33,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:29,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:29,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c:59:
+../USB_DEVICE/App/usbd_cdc_if.h:93:8: error: unknown type name 'USBD_CDC_ItfTypeDef'
+   93 | extern USBD_CDC_ItfTypeDef USBD_Interface_fops_FS;
+      |        ^~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:76:63: error: unknown type name 'USBD_SetupReqTypedef'
+   76 | USBD_StatusTypeDef  USBD_StdDevReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                                               ^~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:77:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   77 | USBD_StatusTypeDef  USBD_StdItfReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:152:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  152 | uint8_t  USBD_CDC_SetTxBuffer(USBD_HandleTypeDef   *pdev,
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:77:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   77 | USBD_StatusTypeDef  USBD_StdItfReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:77:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   77 | USBD_StatusTypeDef  USBD_StdItfReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:85:56: error: unknown type name 'USBD_DescriptorsTypeDef'
+   85 | USBD_StatusTypeDef USBD_Init(USBD_HandleTypeDef *pdev, USBD_DescriptorsTypeDef *pdesc, uint8_t id);
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:156:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  156 | uint8_t  USBD_CDC_SetRxBuffer(USBD_HandleTypeDef   *pdev,
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:77:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   77 | USBD_StatusTypeDef  USBD_StdItfReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:86:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   86 | USBD_StatusTypeDef USBD_DeInit(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:77:63: error: unknown type name 'USBD_SetupReqTypedef'
+   77 | USBD_StatusTypeDef  USBD_StdItfReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                                               ^~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:159:33: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  159 | uint8_t  USBD_CDC_ReceivePacket(USBD_HandleTypeDef *pdev);
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:86:32: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   86 | USBD_StatusTypeDef USBD_DeInit(USBD_HandleTypeDef *pdev);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:77:63: error: unknown type name 'USBD_SetupReqTypedef'
+   77 | USBD_StatusTypeDef  USBD_StdItfReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                                               ^~~~~~~~~~~~~~~~~~~~
+make: *** [Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/subdir.mk:19: Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:78:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   78 | USBD_StatusTypeDef  USBD_StdEPReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:161:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  161 | uint8_t  USBD_CDC_TransmitPacket(USBD_HandleTypeDef *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:87:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   87 | USBD_StatusTypeDef USBD_Start(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:78:35: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   78 | USBD_StatusTypeDef  USBD_StdEPReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                   ^~~~~~~~~~~~~~~~~~
+      |                                   UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:78:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   78 | USBD_StatusTypeDef  USBD_StdEPReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+make: *** [Middlewares/ST/STM32_USB_Device_Library/Core/Src/subdir.mk:25: Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o] Error 1
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:87:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   87 | USBD_StatusTypeDef USBD_Start(USBD_HandleTypeDef *pdev);
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:78:35: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   78 | USBD_StatusTypeDef  USBD_StdEPReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                   ^~~~~~~~~~~~~~~~~~
+      |                                   UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:88:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   88 | USBD_StatusTypeDef USBD_Stop(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:78:62: error: unknown type name 'USBD_SetupReqTypedef'
+   78 | USBD_StatusTypeDef  USBD_StdEPReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:78:62: error: unknown type name 'USBD_SetupReqTypedef'
+   78 | USBD_StatusTypeDef  USBD_StdEPReq(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef  *req);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:88:30: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   88 | USBD_StatusTypeDef USBD_Stop(USBD_HandleTypeDef *pdev);
+      |                              ^~~~~~~~~~~~~~~~~~
+      |                              UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:81:20: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   81 | void USBD_CtlError(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef *req);
+      |                    ^~~~~~~~~~~~~~~~~~
+      |                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:81:20: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   81 | void USBD_CtlError(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef *req);
+      |                    ^~~~~~~~~~~~~~~~~~
+      |                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:89:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   89 | USBD_StatusTypeDef USBD_RegisterClass(USBD_HandleTypeDef *pdev, USBD_ClassTypeDef *pclass);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:81:47: error: unknown type name 'USBD_SetupReqTypedef'
+   81 | void USBD_CtlError(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef *req);
+      |                                               ^~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:81:47: error: unknown type name 'USBD_SetupReqTypedef'
+   81 | void USBD_CtlError(USBD_HandleTypeDef  *pdev, USBD_SetupReqTypedef *req);
+      |                                               ^~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:89:39: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   89 | USBD_StatusTypeDef USBD_RegisterClass(USBD_HandleTypeDef *pdev, USBD_ClassTypeDef *pclass);
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:83:29: error: unknown type name 'USBD_SetupReqTypedef'
+   83 | void USBD_ParseSetupRequest(USBD_SetupReqTypedef *req, uint8_t *pdata);
+      |                             ^~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:83:29: error: unknown type name 'USBD_SetupReqTypedef'
+   83 | void USBD_ParseSetupRequest(USBD_SetupReqTypedef *req, uint8_t *pdata);
+      |                             ^~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:89:65: error: unknown type name 'USBD_ClassTypeDef'; did you mean 'USB_CfgTypeDef'?
+   89 | USBD_StatusTypeDef USBD_RegisterClass(USBD_HandleTypeDef *pdev, USBD_ClassTypeDef *pclass);
+      |                                                                 ^~~~~~~~~~~~~~~~~
+      |                                                                 USB_CfgTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:85:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   85 | USBD_StatusTypeDef USBD_Init(USBD_HandleTypeDef *pdev, USBD_DescriptorsTypeDef *pdesc, uint8_t id);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:85:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   85 | USBD_StatusTypeDef USBD_Init(USBD_HandleTypeDef *pdev, USBD_DescriptorsTypeDef *pdesc, uint8_t id);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:91:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   91 | USBD_StatusTypeDef USBD_RunTestMode(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:85:30: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   85 | USBD_StatusTypeDef USBD_Init(USBD_HandleTypeDef *pdev, USBD_DescriptorsTypeDef *pdesc, uint8_t id);
+      |                              ^~~~~~~~~~~~~~~~~~
+      |                              UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:85:30: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   85 | USBD_StatusTypeDef USBD_Init(USBD_HandleTypeDef *pdev, USBD_DescriptorsTypeDef *pdesc, uint8_t id);
+      |                              ^~~~~~~~~~~~~~~~~~
+      |                              UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:91:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   91 | USBD_StatusTypeDef USBD_RunTestMode(USBD_HandleTypeDef  *pdev);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:85:56: error: unknown type name 'USBD_DescriptorsTypeDef'
+   85 | USBD_StatusTypeDef USBD_Init(USBD_HandleTypeDef *pdev, USBD_DescriptorsTypeDef *pdesc, uint8_t id);
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:92:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   92 | USBD_StatusTypeDef USBD_SetClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:85:56: error: unknown type name 'USBD_DescriptorsTypeDef'
+   85 | USBD_StatusTypeDef USBD_Init(USBD_HandleTypeDef *pdev, USBD_DescriptorsTypeDef *pdesc, uint8_t id);
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:92:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   92 | USBD_StatusTypeDef USBD_SetClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:86:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   86 | USBD_StatusTypeDef USBD_DeInit(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:86:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   86 | USBD_StatusTypeDef USBD_DeInit(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:86:32: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   86 | USBD_StatusTypeDef USBD_DeInit(USBD_HandleTypeDef *pdev);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:93:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   93 | USBD_StatusTypeDef USBD_ClrClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:86:32: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   86 | USBD_StatusTypeDef USBD_DeInit(USBD_HandleTypeDef *pdev);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:87:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   87 | USBD_StatusTypeDef USBD_Start(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:93:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   93 | USBD_StatusTypeDef USBD_ClrClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:87:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   87 | USBD_StatusTypeDef USBD_Start(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:87:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   87 | USBD_StatusTypeDef USBD_Start(USBD_HandleTypeDef *pdev);
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:95:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   95 | USBD_StatusTypeDef USBD_LL_SetupStage(USBD_HandleTypeDef *pdev, uint8_t *psetup);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:87:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   87 | USBD_StatusTypeDef USBD_Start(USBD_HandleTypeDef *pdev);
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:88:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   88 | USBD_StatusTypeDef USBD_Stop(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:95:39: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   95 | USBD_StatusTypeDef USBD_LL_SetupStage(USBD_HandleTypeDef *pdev, uint8_t *psetup);
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:88:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   88 | USBD_StatusTypeDef USBD_Stop(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:88:30: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   88 | USBD_StatusTypeDef USBD_Stop(USBD_HandleTypeDef *pdev);
+      |                              ^~~~~~~~~~~~~~~~~~
+      |                              UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:96:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   96 | USBD_StatusTypeDef USBD_LL_DataOutStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:88:30: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   88 | USBD_StatusTypeDef USBD_Stop(USBD_HandleTypeDef *pdev);
+      |                              ^~~~~~~~~~~~~~~~~~
+      |                              UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:89:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   89 | USBD_StatusTypeDef USBD_RegisterClass(USBD_HandleTypeDef *pdev, USBD_ClassTypeDef *pclass);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:96:41: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   96 | USBD_StatusTypeDef USBD_LL_DataOutStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:89:39: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   89 | USBD_StatusTypeDef USBD_RegisterClass(USBD_HandleTypeDef *pdev, USBD_ClassTypeDef *pclass);
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:89:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   89 | USBD_StatusTypeDef USBD_RegisterClass(USBD_HandleTypeDef *pdev, USBD_ClassTypeDef *pclass);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:97:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   97 | USBD_StatusTypeDef USBD_LL_DataInStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:89:39: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   89 | USBD_StatusTypeDef USBD_RegisterClass(USBD_HandleTypeDef *pdev, USBD_ClassTypeDef *pclass);
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:89:65: error: unknown type name 'USBD_ClassTypeDef'; did you mean 'USB_CfgTypeDef'?
+   89 | USBD_StatusTypeDef USBD_RegisterClass(USBD_HandleTypeDef *pdev, USBD_ClassTypeDef *pclass);
+      |                                                                 ^~~~~~~~~~~~~~~~~
+      |                                                                 USB_CfgTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:97:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   97 | USBD_StatusTypeDef USBD_LL_DataInStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:91:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   91 | USBD_StatusTypeDef USBD_RunTestMode(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:89:65: error: unknown type name 'USBD_ClassTypeDef'; did you mean 'USB_CfgTypeDef'?
+   89 | USBD_StatusTypeDef USBD_RegisterClass(USBD_HandleTypeDef *pdev, USBD_ClassTypeDef *pclass);
+      |                                                                 ^~~~~~~~~~~~~~~~~
+      |                                                                 USB_CfgTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:99:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   99 | USBD_StatusTypeDef USBD_LL_Reset(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:91:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   91 | USBD_StatusTypeDef USBD_RunTestMode(USBD_HandleTypeDef  *pdev);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:91:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   91 | USBD_StatusTypeDef USBD_RunTestMode(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:99:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   99 | USBD_StatusTypeDef USBD_LL_Reset(USBD_HandleTypeDef  *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:92:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   92 | USBD_StatusTypeDef USBD_SetClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:91:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   91 | USBD_StatusTypeDef USBD_RunTestMode(USBD_HandleTypeDef  *pdev);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:100:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  100 | USBD_StatusTypeDef USBD_LL_SetSpeed(USBD_HandleTypeDef  *pdev, USBD_SpeedTypeDef speed);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:92:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   92 | USBD_StatusTypeDef USBD_SetClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:92:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   92 | USBD_StatusTypeDef USBD_SetClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:100:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  100 | USBD_StatusTypeDef USBD_LL_SetSpeed(USBD_HandleTypeDef  *pdev, USBD_SpeedTypeDef speed);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:93:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   93 | USBD_StatusTypeDef USBD_ClrClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:92:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   92 | USBD_StatusTypeDef USBD_SetClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:100:64: error: unknown type name 'USBD_SpeedTypeDef'; did you mean 'USB_ModeTypeDef'?
+  100 | USBD_StatusTypeDef USBD_LL_SetSpeed(USBD_HandleTypeDef  *pdev, USBD_SpeedTypeDef speed);
+      |                                                                ^~~~~~~~~~~~~~~~~
+      |                                                                USB_ModeTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:93:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   93 | USBD_StatusTypeDef USBD_ClrClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:93:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   93 | USBD_StatusTypeDef USBD_ClrClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:101:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  101 | USBD_StatusTypeDef USBD_LL_Suspend(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:95:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   95 | USBD_StatusTypeDef USBD_LL_SetupStage(USBD_HandleTypeDef *pdev, uint8_t *psetup);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:93:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   93 | USBD_StatusTypeDef USBD_ClrClassConfig(USBD_HandleTypeDef  *pdev, uint8_t cfgidx);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:101:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  101 | USBD_StatusTypeDef USBD_LL_Suspend(USBD_HandleTypeDef  *pdev);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:95:39: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   95 | USBD_StatusTypeDef USBD_LL_SetupStage(USBD_HandleTypeDef *pdev, uint8_t *psetup);
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:95:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   95 | USBD_StatusTypeDef USBD_LL_SetupStage(USBD_HandleTypeDef *pdev, uint8_t *psetup);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:102:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  102 | USBD_StatusTypeDef USBD_LL_Resume(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:96:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   96 | USBD_StatusTypeDef USBD_LL_DataOutStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:95:39: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   95 | USBD_StatusTypeDef USBD_LL_SetupStage(USBD_HandleTypeDef *pdev, uint8_t *psetup);
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:102:35: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  102 | USBD_StatusTypeDef USBD_LL_Resume(USBD_HandleTypeDef  *pdev);
+      |                                   ^~~~~~~~~~~~~~~~~~
+      |                                   UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:96:41: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   96 | USBD_StatusTypeDef USBD_LL_DataOutStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:96:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   96 | USBD_StatusTypeDef USBD_LL_DataOutStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:104:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  104 | USBD_StatusTypeDef USBD_LL_SOF(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:97:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   97 | USBD_StatusTypeDef USBD_LL_DataInStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:96:41: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   96 | USBD_StatusTypeDef USBD_LL_DataOutStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:104:32: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  104 | USBD_StatusTypeDef USBD_LL_SOF(USBD_HandleTypeDef  *pdev);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:97:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   97 | USBD_StatusTypeDef USBD_LL_DataInStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:97:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   97 | USBD_StatusTypeDef USBD_LL_DataInStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:105:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  105 | USBD_StatusTypeDef USBD_LL_IsoINIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:99:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   99 | USBD_StatusTypeDef USBD_LL_Reset(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:97:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   97 | USBD_StatusTypeDef USBD_LL_DataInStage(USBD_HandleTypeDef *pdev, uint8_t epnum, uint8_t *pdata);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:105:44: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  105 | USBD_StatusTypeDef USBD_LL_IsoINIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      |                                            ^~~~~~~~~~~~~~~~~~
+      |                                            UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:99:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   99 | USBD_StatusTypeDef USBD_LL_Reset(USBD_HandleTypeDef  *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:106:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  106 | USBD_StatusTypeDef USBD_LL_IsoOUTIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:99:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   99 | USBD_StatusTypeDef USBD_LL_Reset(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:100:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  100 | USBD_StatusTypeDef USBD_LL_SetSpeed(USBD_HandleTypeDef  *pdev, USBD_SpeedTypeDef speed);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:106:45: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  106 | USBD_StatusTypeDef USBD_LL_IsoOUTIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      |                                             ^~~~~~~~~~~~~~~~~~
+      |                                             UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:99:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   99 | USBD_StatusTypeDef USBD_LL_Reset(USBD_HandleTypeDef  *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:100:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  100 | USBD_StatusTypeDef USBD_LL_SetSpeed(USBD_HandleTypeDef  *pdev, USBD_SpeedTypeDef speed);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:108:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  108 | USBD_StatusTypeDef USBD_LL_DevConnected(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:100:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  100 | USBD_StatusTypeDef USBD_LL_SetSpeed(USBD_HandleTypeDef  *pdev, USBD_SpeedTypeDef speed);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:100:64: error: unknown type name 'USBD_SpeedTypeDef'; did you mean 'USB_ModeTypeDef'?
+  100 | USBD_StatusTypeDef USBD_LL_SetSpeed(USBD_HandleTypeDef  *pdev, USBD_SpeedTypeDef speed);
+      |                                                                ^~~~~~~~~~~~~~~~~
+      |                                                                USB_ModeTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:108:41: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  108 | USBD_StatusTypeDef USBD_LL_DevConnected(USBD_HandleTypeDef  *pdev);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:100:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  100 | USBD_StatusTypeDef USBD_LL_SetSpeed(USBD_HandleTypeDef  *pdev, USBD_SpeedTypeDef speed);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:101:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  101 | USBD_StatusTypeDef USBD_LL_Suspend(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:109:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  109 | USBD_StatusTypeDef USBD_LL_DevDisconnected(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:100:64: error: unknown type name 'USBD_SpeedTypeDef'; did you mean 'USB_ModeTypeDef'?
+  100 | USBD_StatusTypeDef USBD_LL_SetSpeed(USBD_HandleTypeDef  *pdev, USBD_SpeedTypeDef speed);
+      |                                                                ^~~~~~~~~~~~~~~~~
+      |                                                                USB_ModeTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:101:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  101 | USBD_StatusTypeDef USBD_LL_Suspend(USBD_HandleTypeDef  *pdev);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:109:44: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  109 | USBD_StatusTypeDef USBD_LL_DevDisconnected(USBD_HandleTypeDef  *pdev);
+      |                                            ^~~~~~~~~~~~~~~~~~
+      |                                            UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:101:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  101 | USBD_StatusTypeDef USBD_LL_Suspend(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:102:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  102 | USBD_StatusTypeDef USBD_LL_Resume(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:112:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  112 | USBD_StatusTypeDef  USBD_LL_Init(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:101:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  101 | USBD_StatusTypeDef USBD_LL_Suspend(USBD_HandleTypeDef  *pdev);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:102:35: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  102 | USBD_StatusTypeDef USBD_LL_Resume(USBD_HandleTypeDef  *pdev);
+      |                                   ^~~~~~~~~~~~~~~~~~
+      |                                   UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:112:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  112 | USBD_StatusTypeDef  USBD_LL_Init(USBD_HandleTypeDef *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:102:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  102 | USBD_StatusTypeDef USBD_LL_Resume(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:104:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  104 | USBD_StatusTypeDef USBD_LL_SOF(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:113:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  113 | USBD_StatusTypeDef  USBD_LL_DeInit(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:102:35: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  102 | USBD_StatusTypeDef USBD_LL_Resume(USBD_HandleTypeDef  *pdev);
+      |                                   ^~~~~~~~~~~~~~~~~~
+      |                                   UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:104:32: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  104 | USBD_StatusTypeDef USBD_LL_SOF(USBD_HandleTypeDef  *pdev);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:113:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  113 | USBD_StatusTypeDef  USBD_LL_DeInit(USBD_HandleTypeDef *pdev);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:104:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  104 | USBD_StatusTypeDef USBD_LL_SOF(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:105:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  105 | USBD_StatusTypeDef USBD_LL_IsoINIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:114:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  114 | USBD_StatusTypeDef  USBD_LL_Start(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:104:32: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  104 | USBD_StatusTypeDef USBD_LL_SOF(USBD_HandleTypeDef  *pdev);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:105:44: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  105 | USBD_StatusTypeDef USBD_LL_IsoINIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      |                                            ^~~~~~~~~~~~~~~~~~
+      |                                            UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:114:35: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  114 | USBD_StatusTypeDef  USBD_LL_Start(USBD_HandleTypeDef *pdev);
+      |                                   ^~~~~~~~~~~~~~~~~~
+      |                                   UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:105:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  105 | USBD_StatusTypeDef USBD_LL_IsoINIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:106:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  106 | USBD_StatusTypeDef USBD_LL_IsoOUTIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:105:44: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  105 | USBD_StatusTypeDef USBD_LL_IsoINIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      |                                            ^~~~~~~~~~~~~~~~~~
+      |                                            UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:115:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  115 | USBD_StatusTypeDef  USBD_LL_Stop(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:106:45: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  106 | USBD_StatusTypeDef USBD_LL_IsoOUTIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      |                                             ^~~~~~~~~~~~~~~~~~
+      |                                             UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:115:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  115 | USBD_StatusTypeDef  USBD_LL_Stop(USBD_HandleTypeDef *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:106:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  106 | USBD_StatusTypeDef USBD_LL_IsoOUTIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:108:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  108 | USBD_StatusTypeDef USBD_LL_DevConnected(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:116:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  116 | USBD_StatusTypeDef  USBD_LL_OpenEP(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:108:41: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  108 | USBD_StatusTypeDef USBD_LL_DevConnected(USBD_HandleTypeDef  *pdev);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:106:45: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  106 | USBD_StatusTypeDef USBD_LL_IsoOUTIncomplete(USBD_HandleTypeDef  *pdev, uint8_t epnum);
+      |                                             ^~~~~~~~~~~~~~~~~~
+      |                                             UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:116:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  116 | USBD_StatusTypeDef  USBD_LL_OpenEP(USBD_HandleTypeDef *pdev,
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:109:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  109 | USBD_StatusTypeDef USBD_LL_DevDisconnected(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:108:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  108 | USBD_StatusTypeDef USBD_LL_DevConnected(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:109:44: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  109 | USBD_StatusTypeDef USBD_LL_DevDisconnected(USBD_HandleTypeDef  *pdev);
+      |                                            ^~~~~~~~~~~~~~~~~~
+      |                                            UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:108:41: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  108 | USBD_StatusTypeDef USBD_LL_DevConnected(USBD_HandleTypeDef  *pdev);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:121:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  121 | USBD_StatusTypeDef  USBD_LL_CloseEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:112:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  112 | USBD_StatusTypeDef  USBD_LL_Init(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:109:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  109 | USBD_StatusTypeDef USBD_LL_DevDisconnected(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:121:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  121 | USBD_StatusTypeDef  USBD_LL_CloseEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:112:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  112 | USBD_StatusTypeDef  USBD_LL_Init(USBD_HandleTypeDef *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:109:44: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  109 | USBD_StatusTypeDef USBD_LL_DevDisconnected(USBD_HandleTypeDef  *pdev);
+      |                                            ^~~~~~~~~~~~~~~~~~
+      |                                            UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:122:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  122 | USBD_StatusTypeDef  USBD_LL_FlushEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:113:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  113 | USBD_StatusTypeDef  USBD_LL_DeInit(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:112:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  112 | USBD_StatusTypeDef  USBD_LL_Init(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:122:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  122 | USBD_StatusTypeDef  USBD_LL_FlushEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:113:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  113 | USBD_StatusTypeDef  USBD_LL_DeInit(USBD_HandleTypeDef *pdev);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:112:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  112 | USBD_StatusTypeDef  USBD_LL_Init(USBD_HandleTypeDef *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:123:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  123 | USBD_StatusTypeDef  USBD_LL_StallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:114:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  114 | USBD_StatusTypeDef  USBD_LL_Start(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:113:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  113 | USBD_StatusTypeDef  USBD_LL_DeInit(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:123:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  123 | USBD_StatusTypeDef  USBD_LL_StallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:114:35: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  114 | USBD_StatusTypeDef  USBD_LL_Start(USBD_HandleTypeDef *pdev);
+      |                                   ^~~~~~~~~~~~~~~~~~
+      |                                   UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:113:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  113 | USBD_StatusTypeDef  USBD_LL_DeInit(USBD_HandleTypeDef *pdev);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:124:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  124 | USBD_StatusTypeDef  USBD_LL_ClearStallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:115:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  115 | USBD_StatusTypeDef  USBD_LL_Stop(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:114:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  114 | USBD_StatusTypeDef  USBD_LL_Start(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:124:42: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  124 | USBD_StatusTypeDef  USBD_LL_ClearStallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                          ^~~~~~~~~~~~~~~~~~
+      |                                          UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:115:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  115 | USBD_StatusTypeDef  USBD_LL_Stop(USBD_HandleTypeDef *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:114:35: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  114 | USBD_StatusTypeDef  USBD_LL_Start(USBD_HandleTypeDef *pdev);
+      |                                   ^~~~~~~~~~~~~~~~~~
+      |                                   UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:125:39: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  125 | uint8_t             USBD_LL_IsStallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:115:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  115 | USBD_StatusTypeDef  USBD_LL_Stop(USBD_HandleTypeDef *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:116:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  116 | USBD_StatusTypeDef  USBD_LL_OpenEP(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:126:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  126 | USBD_StatusTypeDef  USBD_LL_SetUSBAddress(USBD_HandleTypeDef *pdev, uint8_t dev_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:115:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  115 | USBD_StatusTypeDef  USBD_LL_Stop(USBD_HandleTypeDef *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:116:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  116 | USBD_StatusTypeDef  USBD_LL_OpenEP(USBD_HandleTypeDef *pdev,
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:126:43: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  126 | USBD_StatusTypeDef  USBD_LL_SetUSBAddress(USBD_HandleTypeDef *pdev, uint8_t dev_addr);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:116:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  116 | USBD_StatusTypeDef  USBD_LL_OpenEP(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:121:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  121 | USBD_StatusTypeDef  USBD_LL_CloseEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:127:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  127 | USBD_StatusTypeDef  USBD_LL_Transmit(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:116:36: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  116 | USBD_StatusTypeDef  USBD_LL_OpenEP(USBD_HandleTypeDef *pdev,
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:121:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  121 | USBD_StatusTypeDef  USBD_LL_CloseEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:127:38: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  127 | USBD_StatusTypeDef  USBD_LL_Transmit(USBD_HandleTypeDef *pdev,
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:121:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  121 | USBD_StatusTypeDef  USBD_LL_CloseEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:122:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  122 | USBD_StatusTypeDef  USBD_LL_FlushEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:121:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  121 | USBD_StatusTypeDef  USBD_LL_CloseEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:132:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  132 | USBD_StatusTypeDef  USBD_LL_PrepareReceive(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:122:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  122 | USBD_StatusTypeDef  USBD_LL_FlushEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:122:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  122 | USBD_StatusTypeDef  USBD_LL_FlushEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:132:44: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  132 | USBD_StatusTypeDef  USBD_LL_PrepareReceive(USBD_HandleTypeDef *pdev,
+      |                                            ^~~~~~~~~~~~~~~~~~
+      |                                            UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:123:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  123 | USBD_StatusTypeDef  USBD_LL_StallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:122:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  122 | USBD_StatusTypeDef  USBD_LL_FlushEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:137:32: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  137 | uint32_t USBD_LL_GetRxDataSize(USBD_HandleTypeDef *pdev, uint8_t  ep_addr);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:123:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  123 | USBD_StatusTypeDef  USBD_LL_StallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:123:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  123 | USBD_StatusTypeDef  USBD_LL_StallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:80:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   80 | USBD_StatusTypeDef  USBD_CtlSendData(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:124:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  124 | USBD_StatusTypeDef  USBD_LL_ClearStallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:123:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  123 | USBD_StatusTypeDef  USBD_LL_StallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:80:38: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   80 | USBD_StatusTypeDef  USBD_CtlSendData(USBD_HandleTypeDef *pdev,
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:124:42: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  124 | USBD_StatusTypeDef  USBD_LL_ClearStallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                          ^~~~~~~~~~~~~~~~~~
+      |                                          UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:84:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   84 | USBD_StatusTypeDef  USBD_CtlContinueSendData(USBD_HandleTypeDef  *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:124:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  124 | USBD_StatusTypeDef  USBD_LL_ClearStallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:125:39: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  125 | uint8_t             USBD_LL_IsStallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:84:46: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   84 | USBD_StatusTypeDef  USBD_CtlContinueSendData(USBD_HandleTypeDef  *pdev,
+      |                                              ^~~~~~~~~~~~~~~~~~
+      |                                              UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:124:42: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  124 | USBD_StatusTypeDef  USBD_LL_ClearStallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                          ^~~~~~~~~~~~~~~~~~
+      |                                          UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:126:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  126 | USBD_StatusTypeDef  USBD_LL_SetUSBAddress(USBD_HandleTypeDef *pdev, uint8_t dev_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:125:39: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  125 | uint8_t             USBD_LL_IsStallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:88:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   88 | USBD_StatusTypeDef USBD_CtlPrepareRx(USBD_HandleTypeDef  *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:126:43: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  126 | USBD_StatusTypeDef  USBD_LL_SetUSBAddress(USBD_HandleTypeDef *pdev, uint8_t dev_addr);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:88:38: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   88 | USBD_StatusTypeDef USBD_CtlPrepareRx(USBD_HandleTypeDef  *pdev,
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:126:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  126 | USBD_StatusTypeDef  USBD_LL_SetUSBAddress(USBD_HandleTypeDef *pdev, uint8_t dev_addr);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:127:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  127 | USBD_StatusTypeDef  USBD_LL_Transmit(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:92:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   92 | USBD_StatusTypeDef  USBD_CtlContinueRx(USBD_HandleTypeDef  *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:126:43: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  126 | USBD_StatusTypeDef  USBD_LL_SetUSBAddress(USBD_HandleTypeDef *pdev, uint8_t dev_addr);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:127:38: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  127 | USBD_StatusTypeDef  USBD_LL_Transmit(USBD_HandleTypeDef *pdev,
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:92:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   92 | USBD_StatusTypeDef  USBD_CtlContinueRx(USBD_HandleTypeDef  *pdev,
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:127:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  127 | USBD_StatusTypeDef  USBD_LL_Transmit(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:132:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  132 | USBD_StatusTypeDef  USBD_LL_PrepareReceive(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:96:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   96 | USBD_StatusTypeDef  USBD_CtlSendStatus(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:127:38: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  127 | USBD_StatusTypeDef  USBD_LL_Transmit(USBD_HandleTypeDef *pdev,
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:132:44: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  132 | USBD_StatusTypeDef  USBD_LL_PrepareReceive(USBD_HandleTypeDef *pdev,
+      |                                            ^~~~~~~~~~~~~~~~~~
+      |                                            UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:96:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   96 | USBD_StatusTypeDef  USBD_CtlSendStatus(USBD_HandleTypeDef  *pdev);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:132:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+  132 | USBD_StatusTypeDef  USBD_LL_PrepareReceive(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:137:32: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  137 | uint32_t USBD_LL_GetRxDataSize(USBD_HandleTypeDef *pdev, uint8_t  ep_addr);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:98:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   98 | USBD_StatusTypeDef  USBD_CtlReceiveStatus(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:132:44: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  132 | USBD_StatusTypeDef  USBD_LL_PrepareReceive(USBD_HandleTypeDef *pdev,
+      |                                            ^~~~~~~~~~~~~~~~~~
+      |                                            UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:80:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   80 | USBD_StatusTypeDef  USBD_CtlSendData(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:98:43: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   98 | USBD_StatusTypeDef  USBD_CtlReceiveStatus(USBD_HandleTypeDef  *pdev);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:137:32: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  137 | uint32_t USBD_LL_GetRxDataSize(USBD_HandleTypeDef *pdev, uint8_t  ep_addr);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:80:38: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   80 | USBD_StatusTypeDef  USBD_CtlSendData(USBD_HandleTypeDef *pdev,
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:100:27: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  100 | uint32_t  USBD_GetRxCount(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                           ^~~~~~~~~~~~~~~~~~
+      |                           UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:140:8: error: unknown type name 'USBD_ClassTypeDef'
+  140 | extern USBD_ClassTypeDef  USBD_CDC;
+      |        ^~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:80:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   80 | USBD_StatusTypeDef  USBD_CtlSendData(USBD_HandleTypeDef *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:84:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   84 | USBD_StatusTypeDef  USBD_CtlContinueSendData(USBD_HandleTypeDef  *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:80:38: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   80 | USBD_StatusTypeDef  USBD_CtlSendData(USBD_HandleTypeDef *pdev,
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:149:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  149 | uint8_t  USBD_CDC_RegisterInterface(USBD_HandleTypeDef   *pdev,
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:84:46: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   84 | USBD_StatusTypeDef  USBD_CtlContinueSendData(USBD_HandleTypeDef  *pdev,
+      |                                              ^~~~~~~~~~~~~~~~~~
+      |                                              UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:152:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  152 | uint8_t  USBD_CDC_SetTxBuffer(USBD_HandleTypeDef   *pdev,
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:84:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   84 | USBD_StatusTypeDef  USBD_CtlContinueSendData(USBD_HandleTypeDef  *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:88:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   88 | USBD_StatusTypeDef USBD_CtlPrepareRx(USBD_HandleTypeDef  *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:84:46: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   84 | USBD_StatusTypeDef  USBD_CtlContinueSendData(USBD_HandleTypeDef  *pdev,
+      |                                              ^~~~~~~~~~~~~~~~~~
+      |                                              UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:156:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  156 | uint8_t  USBD_CDC_SetRxBuffer(USBD_HandleTypeDef   *pdev,
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:88:38: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   88 | USBD_StatusTypeDef USBD_CtlPrepareRx(USBD_HandleTypeDef  *pdev,
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:159:33: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  159 | uint8_t  USBD_CDC_ReceivePacket(USBD_HandleTypeDef *pdev);
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:88:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   88 | USBD_StatusTypeDef USBD_CtlPrepareRx(USBD_HandleTypeDef  *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:92:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   92 | USBD_StatusTypeDef  USBD_CtlContinueRx(USBD_HandleTypeDef  *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:161:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  161 | uint8_t  USBD_CDC_TransmitPacket(USBD_HandleTypeDef *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../USB_DEVICE/Target/usbd_conf.h:71: warning: "USBD_DEBUG_LEVEL" redefined
+   71 | #define USBD_DEBUG_LEVEL     0
+      | 
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:48: note: this is the location of the previous definition
+   48 | #define USBD_DEBUG_LEVEL           0U
+      | 
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:88:38: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   88 | USBD_StatusTypeDef USBD_CtlPrepareRx(USBD_HandleTypeDef  *pdev,
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:92:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   92 | USBD_StatusTypeDef  USBD_CtlContinueRx(USBD_HandleTypeDef  *pdev,
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:92:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   92 | USBD_StatusTypeDef  USBD_CtlContinueRx(USBD_HandleTypeDef  *pdev,
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c: In function 'USBD_StdItfReq':
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:200:15: warning: implicit declaration of function 'USBD_CtlSendStatus'; did you mean 'USBD_GetStatus'? [-Wimplicit-function-declaration]
+  200 |               USBD_CtlSendStatus(pdev);
+      |               ^~~~~~~~~~~~~~~~~~
+      |               USBD_GetStatus
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:96:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   96 | USBD_StatusTypeDef  USBD_CtlSendStatus(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:92:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   92 | USBD_StatusTypeDef  USBD_CtlContinueRx(USBD_HandleTypeDef  *pdev,
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c: In function 'USBD_StdEPReq':
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:262:17: warning: implicit declaration of function 'USBD_LL_StallEP' [-Wimplicit-function-declaration]
+  262 |                 USBD_LL_StallEP(pdev, ep_addr);
+      |                 ^~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:96:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   96 | USBD_StatusTypeDef  USBD_CtlSendStatus(USBD_HandleTypeDef  *pdev);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:96:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   96 | USBD_StatusTypeDef  USBD_CtlSendStatus(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:311:19: warning: implicit declaration of function 'USBD_LL_ClearStallEP'; did you mean 'USB_EPClearStall'? [-Wimplicit-function-declaration]
+  311 |                   USBD_LL_ClearStallEP(pdev, ep_addr);
+      |                   ^~~~~~~~~~~~~~~~~~~~
+      |                   USB_EPClearStall
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:98:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   98 | USBD_StatusTypeDef  USBD_CtlReceiveStatus(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:96:40: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   96 | USBD_StatusTypeDef  USBD_CtlSendStatus(USBD_HandleTypeDef  *pdev);
+      |                                        ^~~~~~~~~~~~~~~~~~
+      |                                        UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:337:15: warning: implicit declaration of function 'USBD_CtlSendData' [-Wimplicit-function-declaration]
+  337 |               USBD_CtlSendData(pdev, (uint8_t *)(void *)&pep->status, 2U);
+      |               ^~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:98:43: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   98 | USBD_StatusTypeDef  USBD_CtlReceiveStatus(USBD_HandleTypeDef  *pdev);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:98:1: error: unknown type name 'USBD_StatusTypeDef'; did you mean 'HAL_StatusTypeDef'?
+   98 | USBD_StatusTypeDef  USBD_CtlReceiveStatus(USBD_HandleTypeDef  *pdev);
+      | ^~~~~~~~~~~~~~~~~~
+      | HAL_StatusTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:100:27: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  100 | uint32_t  USBD_GetRxCount(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                           ^~~~~~~~~~~~~~~~~~
+      |                           UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:140:8: error: unknown type name 'USBD_ClassTypeDef'
+  140 | extern USBD_ClassTypeDef  USBD_CDC;
+      |        ^~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:365:24: warning: implicit declaration of function 'USBD_LL_IsStallEP' [-Wimplicit-function-declaration]
+  365 |               else if (USBD_LL_IsStallEP(pdev, ep_addr))
+      |                        ^~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:98:43: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   98 | USBD_StatusTypeDef  USBD_CtlReceiveStatus(USBD_HandleTypeDef  *pdev);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:149:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  149 | uint8_t  USBD_CDC_RegisterInterface(USBD_HandleTypeDef   *pdev,
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:100:27: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  100 | uint32_t  USBD_GetRxCount(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+      |                           ^~~~~~~~~~~~~~~~~~
+      |                           UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c: In function 'USBD_SetAddress':
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:611:7: warning: implicit declaration of function 'USBD_LL_SetUSBAddress'; did you mean 'USBD_SetAddress'? [-Wimplicit-function-declaration]
+  611 |       USBD_LL_SetUSBAddress(pdev, dev_addr);
+      |       ^~~~~~~~~~~~~~~~~~~~~
+      |       USBD_SetAddress
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:140:8: error: unknown type name 'USBD_ClassTypeDef'
+  140 | extern USBD_ClassTypeDef  USBD_CDC;
+      |        ^~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:152:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  152 | uint8_t  USBD_CDC_SetTxBuffer(USBD_HandleTypeDef   *pdev,
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:149:37: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  149 | uint8_t  USBD_CDC_RegisterInterface(USBD_HandleTypeDef   *pdev,
+      |                                     ^~~~~~~~~~~~~~~~~~
+      |                                     UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c: In function 'USBD_SetConfig':
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:656:15: warning: implicit declaration of function 'USBD_SetClassConfig'; did you mean 'USBD_SetConfig'? [-Wimplicit-function-declaration]
+  656 |           if (USBD_SetClassConfig(pdev, cfgidx) == USBD_FAIL)
+      |               ^~~~~~~~~~~~~~~~~~~
+      |               USBD_SetConfig
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:156:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  156 | uint8_t  USBD_CDC_SetRxBuffer(USBD_HandleTypeDef   *pdev,
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:152:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  152 | uint8_t  USBD_CDC_SetTxBuffer(USBD_HandleTypeDef   *pdev,
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:159:33: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  159 | uint8_t  USBD_CDC_ReceivePacket(USBD_HandleTypeDef *pdev);
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:674:11: warning: implicit declaration of function 'USBD_ClrClassConfig' [-Wimplicit-function-declaration]
+  674 |           USBD_ClrClassConfig(pdev, cfgidx);
+      |           ^~~~~~~~~~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:156:31: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  156 | uint8_t  USBD_CDC_SetRxBuffer(USBD_HandleTypeDef   *pdev,
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:161:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  161 | uint8_t  USBD_CDC_TransmitPacket(USBD_HandleTypeDef *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../USB_DEVICE/Target/usbd_conf.h:71: warning: "USBD_DEBUG_LEVEL" redefined
+   71 | #define USBD_DEBUG_LEVEL     0
+      | 
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:48: note: this is the location of the previous definition
+   48 | #define USBD_DEBUG_LEVEL           0U
+      | 
+make: *** [Middlewares/ST/STM32_USB_Device_Library/Core/Src/subdir.mk:25: Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o] Error 1
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:159:33: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  159 | uint8_t  USBD_CDC_ReceivePacket(USBD_HandleTypeDef *pdev);
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 UART_HandleTypeDef
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_SetupStageCallback':
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:161:34: error: unknown type name 'USBD_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+  161 | uint8_t  USBD_CDC_TransmitPacket(USBD_HandleTypeDef *pdev);
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  UART_HandleTypeDef
+../USB_DEVICE/Target/usbd_conf.c:114:3: warning: implicit declaration of function 'USBD_LL_SetupStage' [-Wimplicit-function-declaration]
+  114 |   USBD_LL_SetupStage((USBD_HandleTypeDef*)hpcd->pData, (uint8_t *)hpcd->Setup);
+      |   ^~~~~~~~~~~~~~~~~~
+../USB_DEVICE/Target/usbd_conf.h:71: warning: "USBD_DEBUG_LEVEL" redefined
+   71 | #define USBD_DEBUG_LEVEL     0
+      | 
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:48: note: this is the location of the previous definition
+   48 | #define USBD_DEBUG_LEVEL           0U
+      | 
+../USB_DEVICE/App/usb_device.c: In function 'MX_USB_DEVICE_Init':
+../USB_DEVICE/App/usb_device.c:71:7: warning: implicit declaration of function 'USBD_Init'; did you mean 'USB_DevInit'? [-Wimplicit-function-declaration]
+   71 |   if (USBD_Init(&hUsbDeviceFS, &FS_Desc, DEVICE_FS) != USBD_OK)
+      |       ^~~~~~~~~
+      |       USB_DevInit
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_DataOutStageCallback':
+../USB_DEVICE/Target/usbd_conf.c:129:3: warning: implicit declaration of function 'USBD_LL_DataOutStage' [-Wimplicit-function-declaration]
+  129 |   USBD_LL_DataOutStage((USBD_HandleTypeDef*)hpcd->pData, epnum, hpcd->OUT_ep[epnum].xfer_buff);
+      |   ^~~~~~~~~~~~~~~~~~~~
+../USB_DEVICE/App/usb_device.c:75:7: warning: implicit declaration of function 'USBD_RegisterClass' [-Wimplicit-function-declaration]
+   75 |   if (USBD_RegisterClass(&hUsbDeviceFS, &USBD_CDC) != USBD_OK)
+      |       ^~~~~~~~~~~~~~~~~~
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_DataInStageCallback':
+../USB_DEVICE/Target/usbd_conf.c:144:3: warning: implicit declaration of function 'USBD_LL_DataInStage' [-Wimplicit-function-declaration]
+  144 |   USBD_LL_DataInStage((USBD_HandleTypeDef*)hpcd->pData, epnum, hpcd->IN_ep[epnum].xfer_buff);
+      |   ^~~~~~~~~~~~~~~~~~~
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_SOFCallback':
+../USB_DEVICE/Target/usbd_conf.c:158:3: warning: implicit declaration of function 'USBD_LL_SOF'; did you mean 'USB_CLR_SOF'? [-Wimplicit-function-declaration]
+  158 |   USBD_LL_SOF((USBD_HandleTypeDef*)hpcd->pData);
+      |   ^~~~~~~~~~~
+      |   USB_CLR_SOF
+../USB_DEVICE/App/usb_device.c:79:7: warning: implicit declaration of function 'USBD_CDC_RegisterInterface' [-Wimplicit-function-declaration]
+   79 |   if (USBD_CDC_RegisterInterface(&hUsbDeviceFS, &USBD_Interface_fops_FS) != USBD_OK)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../USB_DEVICE/App/usb_device.c:83:7: warning: implicit declaration of function 'USBD_Start'; did you mean 'USBD_SOF'? [-Wimplicit-function-declaration]
+   83 |   if (USBD_Start(&hUsbDeviceFS) != USBD_OK)
+      |       ^~~~~~~~~~
+      |       USBD_SOF
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_ResetCallback':
+../USB_DEVICE/Target/usbd_conf.c:179:3: warning: implicit declaration of function 'USBD_LL_SetSpeed' [-Wimplicit-function-declaration]
+  179 |   USBD_LL_SetSpeed((USBD_HandleTypeDef*)hpcd->pData, speed);
+      |   ^~~~~~~~~~~~~~~~
+../USB_DEVICE/Target/usbd_conf.c:182:3: warning: implicit declaration of function 'USBD_LL_Reset'; did you mean 'USBD_LL_Delay'? [-Wimplicit-function-declaration]
+  182 |   USBD_LL_Reset((USBD_HandleTypeDef*)hpcd->pData);
+      |   ^~~~~~~~~~~~~
+      |   USBD_LL_Delay
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_SuspendCallback':
+../USB_DEVICE/Target/usbd_conf.c:198:3: warning: implicit declaration of function 'USBD_LL_Suspend' [-Wimplicit-function-declaration]
+  198 |   USBD_LL_Suspend((USBD_HandleTypeDef*)hpcd->pData);
+      |   ^~~~~~~~~~~~~~~
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_ResumeCallback':
+../USB_DEVICE/Target/usbd_conf.c:229:3: warning: implicit declaration of function 'USBD_LL_Resume' [-Wimplicit-function-declaration]
+  229 |   USBD_LL_Resume((USBD_HandleTypeDef*)hpcd->pData);
+      |   ^~~~~~~~~~~~~~
+make: *** [USB_DEVICE/App/subdir.mk:25: USB_DEVICE/App/usb_device.o] Error 1
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_ISOOUTIncompleteCallback':
+../USB_DEVICE/Target/usbd_conf.c:244:3: warning: implicit declaration of function 'USBD_LL_IsoOUTIncomplete' [-Wimplicit-function-declaration]
+  244 |   USBD_LL_IsoOUTIncomplete((USBD_HandleTypeDef*)hpcd->pData, epnum);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_ISOINIncompleteCallback':
+../USB_DEVICE/Target/usbd_conf.c:259:3: warning: implicit declaration of function 'USBD_LL_IsoINIncomplete' [-Wimplicit-function-declaration]
+  259 |   USBD_LL_IsoINIncomplete((USBD_HandleTypeDef*)hpcd->pData, epnum);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_ConnectCallback':
+../USB_DEVICE/Target/usbd_conf.c:273:3: warning: implicit declaration of function 'USBD_LL_DevConnected'; did you mean 'USB_DevConnect'? [-Wimplicit-function-declaration]
+  273 |   USBD_LL_DevConnected((USBD_HandleTypeDef*)hpcd->pData);
+      |   ^~~~~~~~~~~~~~~~~~~~
+      |   USB_DevConnect
+../USB_DEVICE/Target/usbd_conf.c: In function 'HAL_PCD_DisconnectCallback':
+../USB_DEVICE/Target/usbd_conf.c:287:3: warning: implicit declaration of function 'USBD_LL_DevDisconnected'; did you mean 'USB_DevDisconnect'? [-Wimplicit-function-declaration]
+  287 |   USBD_LL_DevDisconnected((USBD_HandleTypeDef*)hpcd->pData);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+      |   USB_DevDisconnect
+make: *** [USB_DEVICE/Target/subdir.mk:19: USB_DEVICE/Target/usbd_conf.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+
+15:00:22 Build Failed. 301 errors, 27 warnings. (took 1s.631ms)
+

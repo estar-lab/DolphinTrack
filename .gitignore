@@ -5,3 +5,11 @@ camera_detection/my_inputs/chunks/*.mp4
 camera_detection/my_inputs/chunks/*.mov
 camera_detection/my_outputs/*.mp4
 camera_detection/my_outputs/*.mov
+
+RF_localization/anchor_tag_stm32/Debug
+RF_localization/anchor_tag_stm32/Drivers
+RF_localization/anchor_tag_stm32/Middlewares/ST/STM32_USB_Device_Library
+RF_localization/anchor_tag_stm32/USB_DEVICE
+RF_localization/anchor_tag_stm32/error.txt
+RF_localization/anchor_tag_stm32/NEAR_ANCHOR Debug.launch
+RF_localization/anchor_tag_stm32/STM32F072CBTX_FLASH.ld
