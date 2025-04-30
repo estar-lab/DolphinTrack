@@ -164,14 +164,15 @@ int tag_main(void)
         	current_anchor = (current_anchor + 1) % total_anchors;
         }
 
-        /* Don't send if another interaction is happening */
+        /* Listen for other tags currently ranging */
         dwt_rxenable(DWT_START_RX_IMMEDIATE);
         while (!((status_reg = dwt_read32bitreg(SYS_STATUS_ID)) & (SYS_STATUS_RXFCG | SYS_STATUS_ALL_RX_TO | SYS_STATUS_ALL_RX_ERR)))
         {}
 
+        /* If a message is received, wait to begin ranging */
         if (status_reg & SYS_STATUS_RXFCG)
         {
-        	Sleep(200);
+        	Sleep(200); // May need to be tuned based on desired ranging rate.
         	continue;
         }
         else
@@ -194,9 +195,6 @@ int tag_main(void)
         while (!((status_reg = dwt_read32bitreg(SYS_STATUS_ID)) & (SYS_STATUS_RXFCG | SYS_STATUS_ALL_RX_TO | SYS_STATUS_ALL_RX_ERR)))
         {
         };
-
-        // uint32_t status_reg_error = status_reg & (SYS_STATUS_RXFCG | SYS_STATUS_ALL_RX_TO | SYS_STATUS_ALL_RX_ERR);
-        // CDC_Transmit_FS((uint8_t*) status_reg_error, sizeof(status_reg_error));
 
         /* Increment frame sequence number after transmission of the poll message (modulo 256). */
         frame_seq_nb++;
@@ -261,7 +259,9 @@ int tag_main(void)
                     /* Increment frame sequence number after transmission of the final message (modulo 256). */
                     frame_seq_nb++;
 
+                    /* Increment anchor counter to next anchor and wait for LoRa transmission to complete */
                     current_anchor = (current_anchor + 1) % total_anchors;
+                    Sleep(150); // May need to be tuned based on desired LoRa reliability
                 }
             }
         }

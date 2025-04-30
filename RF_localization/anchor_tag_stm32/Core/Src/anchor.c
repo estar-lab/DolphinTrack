@@ -319,6 +319,7 @@ int anchor_main(void (*send_at_msg_ptr)(char *))
     /* Set preamble timeout for expected frames. See NOTE 6 below. */
     // dwt_setpreambledetecttimeout(PRE_TIMEOUT);
 
+    /* Set up LoRa transmitter. */
     HAL_Delay(2000);
     (*send_at_msg_ptr)("AT+MODE=TEST\r\n");
     HAL_Delay(100);
@@ -345,9 +346,6 @@ int anchor_main(void (*send_at_msg_ptr)(char *))
             }
         };
 
-        //  uint32 error = status_reg & (SYS_STATUS_RXFCG | SYS_STATUS_ALL_RX_TO | SYS_STATUS_ALL_RX_ERR);
-        //         CDC_Transmit_FS((uint8 *) &error, sizeof(status_reg));
-
         if (status_reg & SYS_STATUS_RXFCG)
         {
             uint32 frame_len;
@@ -372,7 +370,6 @@ int anchor_main(void (*send_at_msg_ptr)(char *))
 
             if (memcmp(rx_buffer, rx_poll_msg, ALL_MSG_COMMON_LEN) == 0)
             {
-                //            	CDC_Transmit_FS(rx_buffer, sizeof(rx_poll_msg));
 
                 uint32 resp_tx_time;
                 int ret;
@@ -380,13 +377,9 @@ int anchor_main(void (*send_at_msg_ptr)(char *))
                 /* Retrieve poll reception timestamp. */
                 poll_rx_ts = get_rx_timestamp_u64();
 
-                //                 CDC_Transmit_FS((uint8*) &poll_rx_ts, sizeof(poll_rx_ts));
-
                 /* Set send time for response. See NOTE 9 below. */
                 resp_tx_time = (poll_rx_ts + (POLL_RX_TO_RESP_TX_DLY_UUS * UUS_TO_DWT_TIME)) >> 8;
                 dwt_setdelayedtrxtime(resp_tx_time);
-
-                // CDC_Transmit_FS((uint8*)&resp_tx_time, sizeof(resp_tx_time));
 
                 /* Set expected delay and timeout for final message reception. See NOTE 4 and 5 below. */
                 dwt_setrxaftertxdelay(RESP_TX_TO_FINAL_RX_DLY_UUS);
@@ -408,8 +401,6 @@ int anchor_main(void (*send_at_msg_ptr)(char *))
                 while (!((status_reg = dwt_read32bitreg(SYS_STATUS_ID)) & (SYS_STATUS_RXFCG | SYS_STATUS_ALL_RX_TO | SYS_STATUS_ALL_RX_ERR)))
                 {
                 };
-                // uint32 error = status_reg & (SYS_STATUS_RXFCG | SYS_STATUS_ALL_RX_TO | SYS_STATUS_ALL_RX_ERR);
-                //                CDC_Transmit_FS((uint8 *) &error, sizeof(status_reg));
 
                 /* Increment frame sequence number after transmission of the response message (modulo 256). */
                 frame_seq_nb++;
@@ -422,7 +413,7 @@ int anchor_main(void (*send_at_msg_ptr)(char *))
                     {
                         rx_buffer[i] = 0;
                     }
-                    //                	CDC_Transmit_FS((uint8 *) &status_reg, sizeof(error));
+
                     /* Clear good RX frame event and TX frame sent in the DW1000 status register. */
                     dwt_write32bitreg(SYS_STATUS_ID, SYS_STATUS_RXFCG | SYS_STATUS_TXFRS);
 
@@ -433,13 +424,10 @@ int anchor_main(void (*send_at_msg_ptr)(char *))
                         dwt_readrxdata(rx_buffer, frame_len, 0);
                     }
 
-                    //                    CDC_Transmit_FS(rx_buffer, sizeof(rx_final_msg));
 
                     /* Check that the frame is a final message sent by "DS TWR initiator" example.
                      * As the sequence number field of the frame is not used in this example, it can be zeroed to ease the validation of the frame. */
                     rx_buffer[ALL_MSG_SN_IDX] = 0;
-                    //                    CDC_Transmit_FS(rx_buffer, ALL_MSG_COMMON_LEN);
-                    //                    CDC_Transmit_FS(rx_final_msg, ALL_MSG_COMMON_LEN);
 
                     if (memcmp(rx_buffer, rx_final_msg, ALL_MSG_COMMON_LEN) == 0)
                     {
@@ -487,17 +475,18 @@ int anchor_main(void (*send_at_msg_ptr)(char *))
                             tags_mean[tag_index] = (SLIDING_WINDOW_VARIANCE_RHO_INV * tags_mean[tag_index]) + (SLIDING_WINDOW_VARIANCE_RHO * distance);
                         }
 
-                        /* Display computed distance on LCD. */
-                        sprintf(dist_str, "AT+TEST=TXLRSTR, \"%c,%c,%c,%c,%c,%c,%c,%c,%c,%c,%3.2f,%3.2f,%3.2f,%3.2f,%3.2f\"\r\n", anchor_id[1], rx_final_msg[RX_FINAL_MSG_TAG_ID_IDX + 1], 
-                                                                                                                                    anchor_id[1], rx_final_msg[RX_FINAL_MSG_TAG_ID_IDX + 1], 
-                                                                                                                                    anchor_id[1], rx_final_msg[RX_FINAL_MSG_TAG_ID_IDX + 1], 
-                                                                                                                                    anchor_id[1], rx_final_msg[RX_FINAL_MSG_TAG_ID_IDX + 1], 
-                                                                                                                                    anchor_id[1], rx_final_msg[RX_FINAL_MSG_TAG_ID_IDX + 1], 
-                                                                                                                                    distance, distance, distance, distance, distance);
+                        /* Create message for LoRa transmission */
+                        // ID's and distances are repeated for naive error correction
+                        sprintf(dist_str, "AT+TEST=TXLRSTR, \"%c,%c,%c,%c,%c,%c,%c,%c,%c,%c,%3.2f,%3.2f,%3.2f,%3.2f,%3.2f\"\r\n",
+                        	anchor_id[1], rx_final_msg[RX_FINAL_MSG_TAG_ID_IDX + 1],
+                            anchor_id[1], rx_final_msg[RX_FINAL_MSG_TAG_ID_IDX + 1],
+                            anchor_id[1], rx_final_msg[RX_FINAL_MSG_TAG_ID_IDX + 1],
+                            anchor_id[1], rx_final_msg[RX_FINAL_MSG_TAG_ID_IDX + 1],
+                            anchor_id[1], rx_final_msg[RX_FINAL_MSG_TAG_ID_IDX + 1],
+                            distance, distance, distance, distance, distance);
 
-                        // CDC_Transmit_FS((uint8_t *)dist_str, sizeof(dist_str));
+                        /* Transmit message over LoRa */
                         (*send_at_msg_ptr)(dist_str);
-
                     }
                 }
                 else
