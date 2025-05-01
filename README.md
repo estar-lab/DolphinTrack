@@ -1,8 +1,10 @@
 # DolphinTrack
 
 ## Computer Vision: Dolphin Detections
-`camera_detect`: Includes computer vision pipeline for visual tracking of dolphins. 
-- `inference`: pre-trained models, preliminary results, scripts for running different model architectures on input video 
+`camera_detection`: Includes computer vision pipeline for visual tracking of dolphins. 
+- `evaluation`: compares ground truth and tracked coordinates for model performance
+- `inference`: pre-trained models, preliminary results, scripts for running different model architectures on input video
+- `scripts`: utility files for batching to mitigate RAM issues and particle filter to fill in trajectories
 - `training_pipeline`: labeled datasets, scripts for fine-tuning model architectures on custom data 
 
 ## RF Positioning System: Custom Tag and Anchor Communication 
