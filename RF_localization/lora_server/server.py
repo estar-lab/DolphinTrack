@@ -5,6 +5,9 @@ import codecs
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+import csv
+import time
+from datetime import datetime
 from threading import Thread
 from queue import Queue
 from collections import deque
@@ -13,11 +16,10 @@ from threading import Lock
 
 # Anchor positions for atrium demo
 anchor_positions = {
-    1: [-2.9, -5.5, 2.83],
-    2: [-5.2, 7.75, 2.95],
-    3: [3.0, 4.0, 0.8],
-    4: [2.0, 6.2, 2.80],
-    5: [6.15, -5.5, 1.65],
+    1: [0.1, 1.8, -0.13],
+    2: [2.76, 1.55, 0],
+    3: [1.41, 0, 0],
+    4: [1.62, 2.43, 0],
 }
 
 fig = plt.figure()
@@ -48,7 +50,7 @@ class ReadLine:
                 self.buf.extend(data)
 
 # Create serial port. Ensure that the port is actually where the Wio-E5 mini is connected.
-com_port = 14
+com_port = 17
 recv_ser = serial.Serial(
     port='COM'+str(com_port),
     baudrate=9600,
@@ -163,6 +165,14 @@ def update_position(queue_out):
             else:
                 tag_pos[tag] = alpha2 * compute_position(tags[tag], anchor_positions) + (1-alpha2) * tag_pos[tag]
 
+            unix_t = time.time()
+            dt = datetime.fromtimestamp(unix_t)
+            dt = dt.strftime('%Y-%m-%d %H:%M:%S')
+            with open('tags.csv', 'a', newline='') as f:
+                writer = csv.writer(f)
+                writer.writerow([dt, tag_pos[tag][0], tag_pos[tag][1], '0'])
+            print(tag_pos[tag])
+
             queue_out.put(tag_pos)
 
 
@@ -190,10 +200,19 @@ def animate(i):
         tag_pos[tag] = tag_data[-1][tag]
 
     for tag in tag_pos.values():
-        print(tag)
+        #print(tag)
         ax1.scatter([tag[0]], [tag[1]])
         all_pos.append([tag[0], tag[1]])
 
+with open('tags.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['Time', 'X', 'Y', 'Z'])
+
+with open('anchors.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['Anchor', 'X', 'Y', 'Z'])
+    for anchor_num, anchor_pos in anchor_positions.items():
+        writer.writerow([anchor_num, anchor_pos[0], anchor_pos[1], anchor_pos[2]])
 
 tag_queue = Queue()
 serial_thread = Thread(target = update_position, args=(tag_queue,))
