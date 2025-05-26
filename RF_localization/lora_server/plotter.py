@@ -20,4 +20,4 @@ plt.title('Tag Tracks')
 plt.grid(True)
 
 # Show the plot
-plt.show()
+plt.savefig('plot.png')

@@ -13,14 +13,17 @@ from queue import Queue
 from collections import deque
 from threading import Lock
 
-
-# Anchor positions for atrium demo
-anchor_positions = {
-    1: [0.1, 1.8, -0.13],
-    2: [2.76, 1.55, 0],
-    3: [1.41, 0, 0],
-    4: [1.62, 2.43, 0],
-}
+# Load anchor positions from CSV file.
+anchor_positions = {}
+with open('anchors.csv', 'r') as f:
+    reader = csv.reader(f)
+    next(reader)  # Skip header
+    for row in reader:
+        anchor_num = int(row[0])
+        x = float(row[1])
+        y = float(row[2])
+        z = float(row[3])
+        anchor_positions[anchor_num] = [x, y, z]
 
 fig = plt.figure()
 ax1 = fig.add_subplot(1,1,1)
@@ -50,7 +53,7 @@ class ReadLine:
                 self.buf.extend(data)
 
 # Create serial port. Ensure that the port is actually where the Wio-E5 mini is connected.
-com_port = 17
+com_port = 7
 recv_ser = serial.Serial(
     port='COM'+str(com_port),
     baudrate=9600,
@@ -125,6 +128,8 @@ def update_position(queue_out):
         if anchor_nums.count(anchor_num) < 4:
             continue
         anchor_num = int(anchor_num)
+
+        print(anchor_num)
 
         tag_nums = msg[1:10:2]
         if len(tag_nums) < 5:
